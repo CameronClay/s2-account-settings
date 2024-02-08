@@ -4,7 +4,22 @@ Short script a while back to symlink (symbolic link) all hotkeys/account variabl
 Note that some settings are synced to battle.net/Starcraft 2 (not loaded from variables.txt) directly and need to be explicitly set within Starcraft 2 (e.g. Hotkey profile - but doesnt need to be copied to new account directory)
 
 ## Usage
-`Usage info: python main.py --help`
+```
+usage: s2-settings.py [-h] [-k] [-v] dir
+
+positional arguments:
+  dir              Path to StarCraft II Documents directory
+
+options:
+  -h, --help       show this help message and exit
+
+include (at least one of these flags is required):
+  files to symlink to all accounts
+
+  -k, --hotkeys    Copy hotkeys from $dir/Hotkeys to all accounts
+  -v, --variables  Copy variables from $dir/Account-Variables/Variables.txt to
+                   all accounts
+```
 
 Make sure python is installed and in your `PATH` before running.
 
