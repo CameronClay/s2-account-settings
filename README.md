@@ -5,7 +5,7 @@ Note that some settings are synced to battle.net/Starcraft 2 (not loaded from va
 
 ## Usage
 ```
-usage: s2-settings.py [-h] [-k] [-v] dir
+usage: python s2_settings.py [-h] [-k] [-v] dir
 
 positional arguments:
   dir              Path to StarCraft II Documents directory

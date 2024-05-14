@@ -51,7 +51,7 @@ def create_link(src_path : str, dst_path : str, is_dir : bool = False):
     os.symlink(src_path, dst_path, is_dir)
     print(f'Creating symlink {src_path}->{dst_path}')
 
-def dir_path(path):
+def dir_path(path : str):
     if os.path.isdir(path):
         return path
     else:
