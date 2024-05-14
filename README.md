@@ -21,6 +21,13 @@ include (at least one of these flags is required):
                    all accounts
 ```
 
+For ease of use a run.sh script is provided in the scripts directory. Be sure to create a vars.sh in the same directory with `sc_dir` variable defined.
+e.g.
+```
+# modify this to your StarCraft II Documents directory
+sc_dir="/home/<username>/Games/battlenet/drive_c/users/<username>/Documents/StarCraft II"
+```
+
 Make sure python is installed and in your `PATH` before running.
 
 Steps:
