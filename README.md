@@ -20,7 +20,6 @@ include (at least one of these flags is required):
   -v, --variables  Copy variables from $dir/Account-Variables/Variables.txt to
                    all accounts
 ```
-
 ## Steps
 - Copy `Hotkeys` you want to symlink to `Documents/Starcraft ll/Hotkeys`
 - Copy `Variables.txt` you want to sync (should be one from the accounts directory not the root `Starcraft ll` directory into `Documents/Starcraft ll/Account-Variables`
@@ -36,3 +35,10 @@ sc_dir="/home/<username>/Games/battlenet/drive_c/users/<username>/Documents/Star
 ```
 
 Make sure python is installed and in your `PATH` before running.
+
+### Unit Testing
+- Unit testing done with pytest.
+
+### Tooling
+- Python
+- pytest
