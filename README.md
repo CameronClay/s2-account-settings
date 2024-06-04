@@ -20,6 +20,12 @@ include (at least one of these flags is required):
   -v, --variables  Copy variables from $dir/Account-Variables/Variables.txt to
                    all accounts
 ```
+## Steps
+- Copy `Hotkeys` you want to symlink to `Documents/Starcraft ll/Hotkeys`
+- Copy `Variables.txt` you want to sync (should be one from the accounts directory not the root `Starcraft ll` directory into `Documents/Starcraft ll/Account-Variables`
+- Log into new account on SC2 (any region) 
+- Close SC2
+- Run script
 
 For ease of use a run.sh script is provided in the scripts directory. Be sure to create a vars.sh in the same directory with `sc_dir` variable defined.
 e.g.
@@ -30,9 +36,9 @@ sc_dir="/home/<username>/Games/battlenet/drive_c/users/<username>/Documents/Star
 
 Make sure python is installed and in your `PATH` before running.
 
-Steps:
-- Copy `Hotkeys` you want to symlink to `Documents/Starcraft ll/Hotkeys`
-- Copy `Variables.txt` you want to sync (should be one from the accounts directory not the root `Starcraft ll` directory into `Documents/Starcraft ll/Account-Variables`
-- Log into new account on SC2 (any region) 
-- Close SC2
-- Run script
+### Unit Testing
+- Unit testing done with pytest.
+
+### Tooling
+- Python
+- pytest
