@@ -4,5 +4,5 @@
 SOURCE_DIR=$(dirname "${BASH_SOURCE[0]}")
 source $SOURCE_DIR"/vars.sh"
 
-MSG=$(cd .. && python -m s2_settings -k -v "$sc_dir")
+MSG=$(cd $SOURCE_DIR"/.." && echo $(pwd) && python -m s2_settings -k -v "$sc_dir")
 echo $MSG
